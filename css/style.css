@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.mt{
+    margin-top: 20px;
+}
+
+.mb{
+    margin-bottom: 10px;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;      /* in orzzontale non c'è collasso margini, vengono sommati */
+}
+
+.parent{
+    background-color: aquamarine;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 10px;        /* collasso margini: questi 10px non vengono sommati ai 20px del parent */
+}
